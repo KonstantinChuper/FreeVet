@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import LineHeader from "../../../components/lineHeader/LineHeader";
 import useVerificationCode from "../../../customHooks/useVerificationCode";
 import CodeInputBox from "../../../components/codeInputBox/CodeInputBox";
-import { useState } from "react";
 import CustomButton from "../../../components/customButton/CustomButton";
 
 const L_vetCodePage = () => {
@@ -55,7 +54,7 @@ const L_vetCodePage = () => {
         />
         <div className={s.buttonLine}>
           <CustomButton
-            link="/main"
+            link="/"
             customStyle={{ display: "flex", alignItems: "center", justifyContent: "center" }}
             padding={"16px 54px"}
             text="Отмена"
